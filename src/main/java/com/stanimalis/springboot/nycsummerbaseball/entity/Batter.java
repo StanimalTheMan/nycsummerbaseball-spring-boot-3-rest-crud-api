@@ -2,6 +2,7 @@ package com.stanimalis.springboot.nycsummerbaseball.entity;
 
 import jakarta.persistence.*;
 
+@Entity
 @Table(name="batter")
 public class Batter {
 
@@ -27,6 +28,11 @@ public class Batter {
 
     @Column(name="ops")
     private double ops;
+
+    // need default constructor for entity to avoid error
+    public Batter() {
+
+    }
 
     public Batter(String firstName, String lastName, double avg, short hr, short rbi, double ops) {
         this.firstName = firstName;
