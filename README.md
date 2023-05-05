@@ -1,0 +1,1 @@
+# Naive rest api for something like https://nycsummerbaseball.com/stats/
